@@ -1,53 +1,46 @@
-    /* Размеры в px - точные пиксели */
-    h1 {
-        font-size: 32px; /* точный размер шрифта */
-        margin-bottom: 20px;
-      }
+h1 {
+    font-size: 32px; /* Видим что показано точный размер шрифта */
+    margin-bottom: 20px;
+}
+
+html {
+    font-size: 16px; 
+}
   
-      /* Используем rem — зависит от размера шрифта html */
-      html {
-        font-size: 16px; /* 1rem = 16px */
-      }
+.rem-example {
+    font-size: 1.5rem; 
+    padding: 1rem;
+}
+
+.em-container {
+    font-size: 20px;
+}
   
-      .rem-example {
-        font-size: 1.5rem; /* 24px */
-        padding: 1rem; /* 16px */
-      }
+.em-container p {
+    font-size: 1.2em;
+}
+
+.percent-box {
+    width: 60%; 
+    background-color: black;
+    padding: 10px;
+    margin: 20px auto;
+}
   
-      /* Используем em — зависит от родительского размера */
-      .em-container {
-        font-size: 20px;
-      }
-  
-      .em-container p {
-        font-size: 1.2em; /* 1.2 * 20px = 24px */
-      }
-  
-      /* Используем проценты — ширина зависит от родителя */
-      .percent-box {
-        width: 80%; /* 80% от родительского контейнера */
-        background-color: #e0e0e0;
-        padding: 10px;
-        margin: 10px auto;
-      }
-  
-      /* Цвета в hex */
-      .hex-color {
-        color: #ffffff; /* белый текст */
-        background-color: #3498db; /* синий фон */
-        padding: 10px;
-      }
-  
-      /* Цвета в rgb */
-      .rgb-color {
-        color: rgb(255, 255, 255); /* белый */
-        background-color: rgb(46, 204, 113); /* зелёный */
-        padding: 10px;
-      }
-  
-      /* Цвета в rgba с прозрачностью */
-      .rgba-color {
-        color: rgba(255, 255, 255, 0.9); /* почти белый с прозрачностью */
-        background-color: rgba(231, 76, 60, 0.7); /* красный полупрозрачный */
-        padding: 10px;
-      }
+.hex-color {
+    color: white;
+    background-color: blue; 
+    padding: 23px;
+}
+
+.rgb-color {
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 204, 113);
+    padding: 10px;
+}
+ 
+.rgba-color {
+    color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(231, 76, 60, 0.7); 
+    padding: 23px;
+}
